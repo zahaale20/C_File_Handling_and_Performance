@@ -35,9 +35,17 @@ int main(int argc, char *argv[]){
         second_last_line = last_line;
         last_line = strdup(line);
     }
+
+    // Print statements
     printf("\n\n");
-    printf("Second last line: %s", second_last_line);
-    printf("Last line: %s", last_line);
+    if (second_last_line != NULL){
+        printf("Second last line: %s", second_last_line);
+        free(second_last_line);
+    }
+    if (last_line != NULL){
+        printf("Last line: %s", last_line);
+        free(last_line)
+    }
 
     // Close file
     fclose(file);

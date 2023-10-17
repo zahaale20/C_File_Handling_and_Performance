@@ -1,0 +1,3 @@
+The plots for the read and fread take on a similar shape; however, from my testing fread is significantly more efficient.
+The reason for this is because every time read is used, it makes a system call. This takes longer than what it takes for fread
+because fread can reduce the number of systems calls by its buffering functionality (reading more data than what is requested).

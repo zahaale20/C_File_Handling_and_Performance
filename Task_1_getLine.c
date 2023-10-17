@@ -43,7 +43,7 @@ int main(int argc, char *argv[]){
         free(second_last_line);
     }
     if (last_line != NULL){
-        printf("Last line: %s", last_line);
+        printf("Last line: %s\n\n", last_line);
         free(last_line);
     }
 

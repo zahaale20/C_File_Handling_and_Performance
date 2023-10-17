@@ -44,7 +44,7 @@ int main(int argc, char *argv[]){
     }
     if (last_line != NULL){
         printf("Last line: %s", last_line);
-        free(last_line)
+        free(last_line);
     }
 
     // Close file

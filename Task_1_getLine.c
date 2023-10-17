@@ -10,5 +10,14 @@ int main(int argc, char *argv[]){
         return 1;
     }
 
+    // Obtain file name & create file
+    const char *file_name = argv[1];
+    FILE *file = fopen(file_name, "r");
+
+    // File error handling
+    if (file == NULL) {
+        printf("Error: Error retrieving and opening file name.")
+        return 1;
+    }
 
 }

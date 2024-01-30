@@ -1,4 +1,5 @@
-#C_File_Handling_and_Performance
+# C_File_Handling_and_Performance
+
 The "C_File_Handling_and_Performance" GitHub repository is designed to demonstrate and explore various aspects of file handling, memory management, and performance measurement in C programming. It contains three distinct tasks, each focused on different methods of interacting with file systems and analyzing program performance.
 
 Getline Usage (getline_program.c): This program utilizes the getline function to read from a file, specified as a command-line argument, and prints the last two lines of the file. It handles edge cases where the file has fewer than two lines and reports any issues encountered when opening the file. The program is designed to manage memory efficiently, using strdup and free to handle dynamic memory allocations. Valgrind is used to ensure all memory is properly freed before program termination. This task demonstrates careful memory management and file reading techniques in C.
